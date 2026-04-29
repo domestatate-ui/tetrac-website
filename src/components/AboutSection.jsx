@@ -9,7 +9,7 @@ export default function AboutSection() {
   const inView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section id="about" ref={ref} className="relative py-24 border-t border-white/[0.05]">
+    <section id="about" ref={ref} className="relative py-14 lg:py-24 border-t border-white/[0.05]">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-600/5 rounded-full blur-[120px]" />
       </div>

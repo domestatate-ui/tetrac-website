@@ -43,7 +43,7 @@ export default function ProductsSection() {
   const inView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section id="products" ref={ref} className="relative py-24">
+    <section id="products" ref={ref} className="relative py-14 lg:py-24">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[600px] h-[400px] bg-indigo-600/6 rounded-full blur-[100px]" />
       </div>

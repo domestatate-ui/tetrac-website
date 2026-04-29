@@ -15,7 +15,7 @@ const fadeUp = {
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center pt-16 lg:pt-20 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-indigo-600/10 rounded-full blur-[120px]" />
@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#080c14] via-transparent to-[#080c14]" />
       </div>
 
-      <div className="section-container py-20 w-full">
+      <div className="section-container py-12 lg:py-20 w-full">
         <div
           style={{
             display: 'grid',

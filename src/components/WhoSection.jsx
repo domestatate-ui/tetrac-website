@@ -36,7 +36,7 @@ export default function WhoSection() {
   const inView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section id="who" ref={ref} className="relative py-24 border-t border-white/[0.05]">
+    <section id="who" ref={ref} className="relative py-14 lg:py-24 border-t border-white/[0.05]">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-indigo-600/5 rounded-full blur-[100px]" />
       </div>

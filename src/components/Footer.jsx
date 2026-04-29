@@ -29,7 +29,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/[0.06] pt-16 pb-10">
+    <footer className="relative border-t border-white/[0.06] pt-10 lg:pt-16 pb-8 lg:pb-10">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-px bg-gradient-to-r from-transparent via-indigo-500/30 to-transparent" />
 
       <div className="section-container">

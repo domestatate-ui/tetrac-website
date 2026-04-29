@@ -39,7 +39,7 @@ export default function HowItWorks() {
   const inView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section id="how" ref={ref} className="relative py-24 border-t border-white/[0.05]">
+    <section id="how" ref={ref} className="relative py-14 lg:py-24 border-t border-white/[0.05]">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-[500px] h-[400px] bg-indigo-600/5 rounded-full blur-[100px]" />
       </div>
@@ -71,6 +71,7 @@ export default function HowItWorks() {
               initial={{ opacity: 0, x: -30 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.15 }}
+              className="step-item"
               style={{ display: 'flex', gap: '2.5rem', alignItems: 'flex-start', paddingBottom: i < steps.length - 1 ? '2.5rem' : 0 }}
             >
               {/* Icon */}
@@ -107,6 +108,12 @@ export default function HowItWorks() {
           </a>
         </motion.div>
       </div>
+
+      <style jsx>{`
+        @media (max-width: 480px) {
+          .step-item { gap: 1.25rem !important; }
+        }
+      `}</style>
     </section>
   );
 }

@@ -57,7 +57,7 @@ export default function FeaturesSection() {
   const inView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section id="features" ref={ref} className="relative py-24">
+    <section id="features" ref={ref} className="relative py-14 lg:py-24">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 right-0 w-[500px] h-[400px] bg-purple-600/6 rounded-full blur-[100px]" />
       </div>
